@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-size: cover;
+    padding: 0 10%;
+    overflow: hidden;
+    position: relative;
+
+}
+.logo{
+    padding-top: 10px;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+}
+nav{
+    padding:  0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li{
+    background-image: linear-gradient(135deg,rgb(215, 142, 175) 0%, rgba(148,187,233,1));
+    border-radius: 30px;
+    padding: 10px 20px;
+    list-style: none;
+    display: inline-block;
+    margin: 19px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #63025f;
+    font-size: 18px;
+    font-weight: 400;
+}
+nav ul li a:hover{
+    color: #26052a;
+}
+.login{
+    display: inline-block;
+
+}
+.login-btn{
+    padding-top: 50px;
+    text-decoration: none;
+    color: #63025f;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.btn{
+    text-decoration: none;
+    color: rgb(248, 228, 250);
+    padding: 14px 40px;
+    background-image: linear-gradient(45deg,rgb(137, 0, 137),rgb(247, 165, 179));
+    font-size: 18px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition:.5s;
+}
+.content{
+    max-width: 600px;
+    margin-top: 5%;
+}
+.content h1{
+    font-size: 50px;
+    color: #63025f;
+}
+.content p{
+    margin: 10px 0 30px;
+    padding-top: 20px;
+    font-size: 26px;
+    color: #7e157b;
+    animation-delay: .5s;
+
+}
+.content .btn{
+    margin: 25%;
+    font-size: 25px;
+    padding: 10px 50px;
+    animation-delay: 1s;
+}
+.btn:hover{
+    color: #eec6f6;
+    border-top-right-radius: 30px;
+}
+.featured{
+    width: 500px;
+    height: 700px;
+    bottom: 0;
+    right: 20%;
+    position: absolute;
+    
+}
+.featured.anim{
+    animation-delay: 1s;
+
+}
+.anim{
+    opacity: 0;    
+    transform: translateY(30px);
+    animation: moveup .5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 100%;
+    transform: translateY(0px);
+
+    }
+}
